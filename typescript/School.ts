@@ -44,7 +44,7 @@ export class School{
         console.log(`${this._name} educates ${this._numberOfStudents} at the ${this._level} school level.`);
     }
 
-    pickSubstituteTeacher(substituteTeachers : string[]) : void{
+    static pickSubstituteTeacher(substituteTeachers : string[]) : void{
         if(substituteTeachers){
             let randomNumber = Math.floor(Math.random() * substituteTeachers.length);
             console.log(substituteTeachers[randomNumber]);
@@ -52,7 +52,6 @@ export class School{
             console.warn('No substituteTeachers.');
         }
     }
-    
 }
 
 export enum Level {

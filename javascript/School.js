@@ -39,7 +39,7 @@ export class School {
     quickFacts() {
         console.log(`${this._name} educates ${this._numberOfStudents} at the ${this._level} school level.`);
     }
-    pickSubstituteTeacher(substituteTeachers) {
+    static pickSubstituteTeacher(substituteTeachers) {
         if (substituteTeachers) {
             let randomNumber = Math.floor(Math.random() * substituteTeachers.length);
             console.log(substituteTeachers[randomNumber]);
